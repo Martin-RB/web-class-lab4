@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jammer</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+  <body>
+    <header class="navbar navbar-default">
+      <h1 class="todoTitle">
+        Todo List
+      </h1>
+    </header>
+    <main class="wrapper" role="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3>
+                  New todo
+                </h3>
+              </div>
+              <div class="panel-body">
+                <form class="todoForm">
+                  <fieldset>
+                    <label id="notAct" style="display: none" for="todo_newTodo_text_">Escriba alguna actividad</label>
+                    <textarea class="newTodo form-control" id="todo_newTodo_text_">
+                    </textarea>
+                    <button type="submit" class="submitButton" id="todo_newTodo_post_"> 
+                      Post Todo
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3>List of todo's</h3>
+              </div>
+              <div class="panel-body" class="listOfTodos">
+                <ol id="todo_todos_list_">
+                  <li class="todo-listItem"><input type="checkbox" name="todo_todoCheck"> asd</li>
+                  <li class="todo-listItem"><input type="checkbox" name="todo_todoCheck"> asd</li>
+                  <li class="todo-listItem"><input type="checkbox" name="todo_todoCheck"> asd</li>
+                </ol>
+              </div>
+              <div class="buttons">
+                <button class="clearButton btn-info" id="todo_todos_clear_">
+                  Clear all Todo's
+                </button>
+                <button class="markAllButton btn-success" id="todo_todos_markTodos_"> 
+                  Mark all Todo's
+                </button>
+                <button class="deleteButton btn-danger" id="todo_todos_deleteTodos_">
+                  Delete all Todo's
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer role="footer" class="footer">
+      Todo list application
+    </footer>
+
+    <script src="./js/js.js"></script>
+  </body>
+</html>
